@@ -19,5 +19,9 @@ find . -name ".svn" |xargs rm -rf
 svn status | grep "^\?"  | awk '{print $2}' | xargs svn add
 ````
 
+### View file differences
+````
+svn diff -r 'head' path/file
+````
 
 
