@@ -26,5 +26,10 @@ svn diff -r 'head' path/file
 ````
 svn log -vr r46924
 ````
+### Svn Delete all locally missing files (Mac Version)
+````
+svn st | grep ^! | awk '{print " --force "$2}' | xargs svn rm
+````
+
 
 
