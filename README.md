@@ -30,6 +30,10 @@ svn log -vr r46924
 ````
 svn st | grep ^! | awk '{print " --force "$2}' | xargs svn rm
 ````
+### View pending update files
+````
+svn status -u
+````
 
 
 
