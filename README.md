@@ -7,6 +7,11 @@
 ````
 dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 ````
+### Check free disk space
+````
+df -h
+````
+
 ## SVN
 
 ### Remove .svn folders
@@ -34,6 +39,7 @@ svn st | grep ^! | awk '{print " --force "$2}' | xargs svn rm
 ````
 svn status -u
 ````
+
 
 
 
