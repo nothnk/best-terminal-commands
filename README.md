@@ -40,13 +40,16 @@ svn st | grep ^! | awk '{print " --force "$2}' | xargs svn rm
 svn status -u
 ````
 
-## Utils
+## Utils (macosX)
 
 ### Create formatted HFS Volume
 ````
 hdiutil create -size 1000m -fs "Case-sensitive HFS+" -volname NameVolume NameFile.dmg
 ````
-
+### Reset finder
+````
+rm ~/Library/Preferences/com.apple.finder.plist&&killall Finder
+````
 
 
 
