@@ -56,5 +56,9 @@ rm ~/Library/Preferences/com.apple.finder.plist&&killall Finder
 ````
 php app/console generate:doctrine:form AdminBundle:Contact
 ````
+### Generate easy CRUD for an entity
+````
+php app/console generate:doctrine:crud --entity=AdminBundle:EntityName --route-prefix=entity_name --with-write --format=yml --no-interaction
+````
 
 
