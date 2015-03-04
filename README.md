@@ -1,62 +1,71 @@
-# Best terminal commands
+# Developer commands
 
+A list of commands i use everyday as developer
+
+## Table of Contents
+
+- [Server](#server)
+- [Svn](#svn)
+- [Utils](#utils)
+- [Symfony2](#symfony2)
+- - -
 
 ## Server
 
-### Reload hosts
+- Reload hosts
 ````
 dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 ````
-### Check free disk space
+- Check free disk space
 ````
 df -h
 ````
 
 ## SVN
 
-### Remove .svn folders
+- Remove .svn folders
 ````
 find . -name ".svn" |xargs rm -rf
 ````
 
-### Add new files
+- Add new files
 ````
 svn status | grep "^\?"  | awk '{print $2}' | xargs svn add
 ````
-### View file differences
+- View file differences
 ````
 svn diff -r 'head' path/file
 ````
-### View log for a specific revision
+- View log for a specific revision
 ````
 svn log -vr r46924
 ````
-### Svn Delete all locally missing files (Mac Version)
+- Svn Delete all locally missing files (Mac Version)
 ````
 svn st | grep ^! | awk '{print " --force "$2}' | xargs svn rm
 ````
-### View pending update files
+- View pending update files
 ````
 svn status -u
 ````
 
 ## Utils (macosX)
 
-### Create formatted HFS Volume
+- Create formatted HFS Volume
 ````
 hdiutil create -size 1000m -fs "Case-sensitive HFS+" -volname NameVolume NameFile.dmg
 ````
-### Reset finder
+- Reset finder
 ````
 rm ~/Library/Preferences/com.apple.finder.plist&&killall Finder
 ````
 ## Symfony2
 
-### Generating a New Form Type Class Based on a Doctrine Entity
+- Generating a New Form Type Class Based on a Doctrine Entity
 ````
 php app/console generate:doctrine:form AdminBundle:Contact
 ````
-### Generate easy CRUD for an entity
+- Generate easy CRUD for an entity
 ````
 php app/console generate:doctrine:crud --entity=AdminBundle:EntityName --route-prefix=entity_name --with-write --format=yml --no-interaction
 ````
