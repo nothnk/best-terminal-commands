@@ -6,8 +6,9 @@ A list of commands i use everyday as developer
 
 - [Server](#server)
 - [Svn](#svn)
-- [Utils](#utils)
+- [Utils](#utils-macosx)
 - [Symfony2](#symfony2)
+
 - - -
 
 ## Server
