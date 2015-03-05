@@ -21,6 +21,10 @@ dscacheutil -flushcache; sudo killall -HUP mDNSResponder
 ````
 df -h
 ````
+- Reports the sizes of directory trees
+````
+du -h
+````
 
 ## SVN
 
