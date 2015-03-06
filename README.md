@@ -53,6 +53,10 @@ svn st | grep ^! | awk '{print " --force "$2}' | xargs svn rm
 ````
 svn status -u
 ````
+- Ignore files (in file folder)
+````
+svn propset svn:ignore file-to-ignore .
+````
 
 ## Utils (macosX)
 
