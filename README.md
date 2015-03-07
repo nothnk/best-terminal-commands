@@ -57,6 +57,10 @@ svn status -u
 ````
 svn propset svn:ignore file-to-ignore .
 ````
+- view ignored files in the current directory
+````
+svn propget svn:ignore
+````
 
 ## Utils (macosX)
 
