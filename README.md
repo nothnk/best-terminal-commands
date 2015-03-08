@@ -82,5 +82,10 @@ php app/console generate:doctrine:form AdminBundle:Contact
 ````
 php app/console generate:doctrine:crud --entity=AdminBundle:EntityName --route-prefix=entity_name --with-write --format=yml --no-interaction
 ````
+- Show the pending changes to the database
+````
+php app/console doctrine:schema:update --dump-sql
+````
+
 
 
