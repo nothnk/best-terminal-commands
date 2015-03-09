@@ -86,6 +86,10 @@ php app/console generate:doctrine:crud --entity=AdminBundle:EntityName --route-p
 ````
 php app/console doctrine:schema:update --dump-sql
 ````
+- Write the pending changes to the database
+````
+php app/console doctrine:schema:update --force
+````
 
 
 
