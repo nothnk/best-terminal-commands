@@ -61,6 +61,10 @@ svn propset svn:ignore file-to-ignore .
 ````
 svn propget svn:ignore
 ````
+- svn merge repo with an entire branch
+````
+svn merge svn://XX.XX.XX.XX/repo/branch
+````
 
 ## Utils (macosX)
 
