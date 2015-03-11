@@ -25,6 +25,10 @@ df -h
 ````
 du -h
 ````
+- Change permissions of a directory/file to a user
+````
+chown -R username:usergroup path_to_change
+````
 
 ## SVN
 
