@@ -70,6 +70,11 @@ svn propget svn:ignore
 svn merge svn://XX.XX.XX.XX/repo/branch
 ````
 
+- svn merge only one file on a branch 
+````
+svn merge svn://XX.XX.XX.XX/repo/path/to/file local/path/to/file
+````
+
 ## Utils (macosX)
 
 - Create formatted HFS Volume
