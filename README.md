@@ -85,6 +85,11 @@ hdiutil create -size 1000m -fs "Case-sensitive HFS+" -volname NameVolume NameFil
 ````
 rm ~/Library/Preferences/com.apple.finder.plist&&killall Finder
 ````
+- Show folders/list size and showing MB/KB
+````
+ls -lahS
+````
+
 ## Symfony2
 
 - Generating a New Form Type Class Based on a Doctrine Entity
