@@ -11,7 +11,7 @@ A list of commands i use everyday as developer
 
 - - -
 
-## Server
+## Server *(4)*
 
 - Reload hosts
 ````
@@ -30,7 +30,7 @@ du -h
 chown -R username:usergroup path_to_change
 ````
 
-## SVN
+## SVN *(9)*
 
 - Remove .svn folders
 ````
@@ -75,7 +75,7 @@ svn merge svn://XX.XX.XX.XX/repo/branch
 svn merge svn://XX.XX.XX.XX/repo/path/to/file local/path/to/file
 ````
 
-## Utils (macosX)
+## Utils (macosX) *(3)*
 
 - Create formatted HFS Volume
 ````
@@ -90,7 +90,7 @@ rm ~/Library/Preferences/com.apple.finder.plist&&killall Finder
 ls -lahS
 ````
 
-## Symfony2
+## Symfony2 *(4)*
 
 - Generating a New Form Type Class Based on a Doctrine Entity
 ````
@@ -108,7 +108,7 @@ php app/console doctrine:schema:update --dump-sql
 ````
 php app/console doctrine:schema:update --force
 ````
-## Drupal 
+## Drupal *(1)*
 
 - Update drupal (https://fuerstnet.de/en/drupal-upgrade-easier)
 ````
