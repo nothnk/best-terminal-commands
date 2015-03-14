@@ -108,6 +108,11 @@ php app/console doctrine:schema:update --dump-sql
 ````
 php app/console doctrine:schema:update --force
 ````
+## Drupal 
 
+- Update drupal (https://fuerstnet.de/en/drupal-upgrade-easier)
+````
+patch -p1 < PATCHFILE
+````
 
 
