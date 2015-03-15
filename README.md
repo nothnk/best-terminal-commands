@@ -114,5 +114,10 @@ php app/console doctrine:schema:update --force
 ````
 patch -p1 < PATCHFILE
 ````
+- Remove cache
+````
+drush cc all
+````
+
 
 
