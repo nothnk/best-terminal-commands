@@ -108,7 +108,7 @@ php app/console doctrine:schema:update --dump-sql
 ````
 php app/console doctrine:schema:update --force
 ````
-## Drupal *(1)*
+## Drupal *(2)*
 
 - Update drupal (https://fuerstnet.de/en/drupal-upgrade-easier)
 ````
