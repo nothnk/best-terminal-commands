@@ -118,6 +118,13 @@ patch -p1 < PATCHFILE
 ````
 drush cc all
 ````
+## Git *(1)*
+
+- Removing multiple files from a Git repo that have already been deleted from disk
+````
+git rm $(git ls-files --deleted)  
+````
+
 
 
 
