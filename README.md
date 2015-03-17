@@ -124,7 +124,10 @@ drush cc all
 ````
 git rm $(git ls-files --deleted)  
 ````
-
+- Git commit direct
+````
+git add . ; git commit -m "Message" ; git push origin master 
+````
 
 
 
