@@ -11,7 +11,7 @@ A list of commands i use everyday as developer
 
 - - -
 
-## Server *(4)*
+## Server *(5)*
 
 - Reload hosts
 ````
@@ -28,6 +28,10 @@ du -h
 - Change permissions of a directory/file to a user
 ````
 chown -R username:usergroup path_to_change
+````
+- Create link symbolic
+````
+ln -s origin_folder_or_file name_link
 ````
 
 ## SVN *(9)*
@@ -118,7 +122,7 @@ patch -p1 < PATCHFILE
 ````
 drush cc all
 ````
-## Git *(1)*
+## Git *(2)*
 
 - Removing multiple files from a Git repo that have already been deleted from disk
 ````
