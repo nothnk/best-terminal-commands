@@ -11,7 +11,7 @@ A list of commands i use everyday as developer
 
 - - -
 
-## Server *(5)*
+## Server *(6)*
 
 - Reload hosts
 ````
@@ -32,6 +32,10 @@ chown -R username:usergroup path_to_change
 - Create link symbolic
 ````
 ln -s origin_folder_or_file name_link
+````
+- Create tar.gz
+````
+tar -czvf name_file.tar.gz file_or_folder_to_compress
 ````
 
 ## SVN *(9)*
