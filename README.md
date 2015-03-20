@@ -37,6 +37,10 @@ ln -s origin_folder_or_file name_link
 ````
 tar -czvf name_file.tar.gz file_or_folder_to_compress
 ````
+- Extract tar.gz 
+````
+tar -xzvf name_file.tar.gz
+````
 
 ## SVN *(9)*
 
