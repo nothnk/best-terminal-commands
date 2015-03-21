@@ -11,7 +11,7 @@ A list of commands i use everyday as developer
 
 - - -
 
-## Server *(6)*
+## Server *(8)*
 
 - Reload hosts
 ````
@@ -36,6 +36,10 @@ ln -s origin_folder_or_file name_link
 - Create tar.gz
 ````
 tar -czvf name_file.tar.gz file_or_folder_to_compress
+````
+- Create tar.gz with date
+````
+tar -czvf "backup-$(date +%y-%m-%d--%H-%M-%S).tar.gz" file_or_folder_to_compress
 ````
 - Extract tar.gz 
 ````
