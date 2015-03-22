@@ -134,7 +134,7 @@ patch -p1 < PATCHFILE
 ````
 drush cc all
 ````
-## Git *(2)*
+## Git *(3)*
 
 - Removing multiple files from a Git repo that have already been deleted from disk
 ````
@@ -143,6 +143,10 @@ git rm $(git ls-files --deleted)
 - Git commit direct
 ````
 git add . ; git commit -m "Message" ; git push origin master 
+````
+- Git update
+````
+git pull origin master
 ````
 
 
