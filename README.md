@@ -46,13 +46,12 @@ tar -czvf "backup-$(date +%y-%m-%d--%H-%M-%S).tar.gz" file_or_folder_to_compress
 tar -xzvf name_file.tar.gz
 ````
 
-## SVN *(9)*
+## SVN *(10)*
 
 - Remove .svn folders
 ````
 find . -name ".svn" |xargs rm -rf
 ````
-
 - Add new files
 ````
 svn status | grep "^\?"  | awk '{print $2}' | xargs svn add
@@ -85,10 +84,13 @@ svn propget svn:ignore
 ````
 svn merge svn://XX.XX.XX.XX/repo/branch
 ````
-
 - svn merge only one file on a branch 
 ````
 svn merge svn://XX.XX.XX.XX/repo/path/to/file local/path/to/file
+````
+- svn commit
+````
+svn ci -m "Message"
 ````
 
 ## Utils (macosX) *(3)*
