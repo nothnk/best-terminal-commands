@@ -11,7 +11,7 @@ A list of commands i use everyday as developer
 
 - - -
 
-## Server *(8)*
+## Server *(9)*
 
 - Reload hosts
 ````
@@ -44,6 +44,10 @@ tar -czvf "backup-$(date +%y-%m-%d--%H-%M-%S).tar.gz" file_or_folder_to_compress
 - Extract tar.gz 
 ````
 tar -xzvf name_file.tar.gz
+````
+- Create zip folder recursive
+````
+zip -r  "backup-$(date +%Y-%m-%d--%H-%M-%S).zip" file_or_folder_to_compress
 ````
 
 ## SVN *(10)*
