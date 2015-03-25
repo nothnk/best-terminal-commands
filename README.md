@@ -97,7 +97,7 @@ svn merge svn://XX.XX.XX.XX/repo/path/to/file local/path/to/file
 svn ci -m "Message"
 ````
 
-## Utils (macosX) *(3)*
+## Utils (macosX) *(4)*
 
 - Create formatted HFS Volume
 ````
@@ -110,6 +110,10 @@ rm ~/Library/Preferences/com.apple.finder.plist&&killall Finder
 - Show folders/list size and showing MB/KB
 ````
 ls -lahS
+````
+- List of commands you use most often
+````
+history | awk '{print $2}' | sort | uniq -c | sort -rn | head
 ````
 
 ## Symfony2 *(4)*
