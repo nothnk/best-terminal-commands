@@ -11,7 +11,7 @@ A list of commands i use everyday as developer
 
 - - -
 
-## Server *(9)*
+## Server *(10)*
 
 - Reload hosts
 ````
@@ -48,6 +48,15 @@ tar -xzvf name_file.tar.gz
 - Create zip folder recursive
 ````
 zip -r  "backup-$(date +%Y-%m-%d--%H-%M-%S).zip" file_or_folder_to_compress
+````
+
+- Restore backup mysqldatabase
+````
+mysql -u root -ppassworduser databasename < backup-file.sql
+````
+For MAMP
+````
+/Applications/MAMP/Library/bin/mysql -u root -ppassworduser databasename < backup-file.sql
 ````
 
 ## SVN *(10)*
