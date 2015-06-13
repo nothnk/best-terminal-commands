@@ -106,7 +106,7 @@ svn merge svn://XX.XX.XX.XX/repo/path/to/file local/path/to/file
 svn ci -m "Message"
 ````
 
-## Utils (macosX) *(4)*
+## Utils (macosX) *(5)*
 
 - Create formatted HFS Volume
 ````
@@ -123,6 +123,11 @@ ls -lahS
 - List of commands you use most often
 ````
 history | awk '{print $2}' | sort | uniq -c | sort -rn | head
+````
+
+- Mount iso
+````
+hdiutil mount path/name-file.iso
 ````
 
 ## Symfony2 *(4)*
