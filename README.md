@@ -173,5 +173,15 @@ git add . ; git commit -m "Message" ; git push origin master
 git pull origin master
 ````
 
+## NPM *(2)*
 
+- Listing globally installed NPM packages and version
+```
+npm list -g --depth=0
+```
 
+- Search if a package is installed locally
+
+```
+npm ls -g | grep -E "babelcli|crossenv"
+```
