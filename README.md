@@ -4,11 +4,13 @@ A list of commands i use everyday as developer
 
 ## Table of Contents
 
-- [Server](#server)
-- [Svn](#svn)
-- [Utils](#utils-macosx)
-- [Symfony2](#symfony2)
-- [NPM](#npm)
+- [Server](#server-10)
+- [Svn](#svn-10)
+- [Utils](#utils-macosx-5)
+- [Symfony2](#symfony2-4)
+- [Drupal](#drupal-2)
+- [GIT](#git-3)
+- [NPM](#npm-2)
 - - -
 
 ## Server *(10)*
