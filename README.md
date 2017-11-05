@@ -190,7 +190,7 @@ npm ls -g | grep -E "babelcli|crossenv"
 ```
 
 ## Convert files *(2)*
-
+# http://www.bugcodemaster.com/article/convert-videos-mp4-format-using-ffmpeg
 - Convert mov to mp4
 ```
 ffmpeg -i file.mov -vf scale=1280:720 -c:v libx264 -preset fast -c:a aac file.mp4 -hide_banner
