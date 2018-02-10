@@ -11,7 +11,7 @@ A list of commands i use everyday as developer
 - [Drupal](#drupal-2)
 - [GIT](#git-3)
 - [NPM](#npm-2)
-- [Convert files](#convert-files-2)
+- [Convert files](#convert-files-3)
 - - -
 
 ## Server *(10)*
@@ -200,3 +200,9 @@ ffmpeg -i file.mov -vf scale=1280:720 -c:v libx264 -preset fast -c:a aac file.mp
 ```
 ffmpeg file.mp3 -i file.m4a -codex:a libmp3lame -qscale:a 1
 ```
+
+- Reduce mp4 file size 
+```
+ffmpeg -i input.mp4 -c:v libx264 -crf 24 -b:v 1M -c:a aac output.mp4
+```
+- Convert mov to mp4
