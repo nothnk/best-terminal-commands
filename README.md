@@ -190,10 +190,21 @@ npm ls -g | grep -E "babelcli|crossenv"
 ```
 
 ## Convert files *(2)*
+- Requirements: Install ffmpeg
+```
+brew install ffmpeg
+```
+
 # http://www.bugcodemaster.com/article/convert-videos-mp4-format-using-ffmpeg
-- Convert mov to mp4
+- Convert & scale mov to mp4
 ```
 ffmpeg -i file.mov -vf scale=1280:720 -c:v libx264 -preset fast -c:a aac file.mp4 -hide_banner
+```
+
+- Only Convert mov to mp4
+
+```
+ffmpeg -i sample..mov -c:v libx264 -preset fast -c:a aac sample.mp4 -hide_banner
 ```
 
 - Convert m4a to mp3
