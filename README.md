@@ -133,6 +133,16 @@ history | awk '{print $2}' | sort | uniq -c | sort -rn | head
 hdiutil mount path/name-file.iso
 ````
 
+- Find files in a path
+```
+find src/ui -name "index.js"
+```
+
+- Find and remove files in a path
+```
+find src/ui -name "index.js"  -exec rm -rf {} \;
+```
+
 ## Symfony2 *(4)*
 
 - Generating a New Form Type Class Based on a Doctrine Entity
@@ -195,8 +205,8 @@ npm ls -g | grep -E "babelcli|crossenv"
 brew install ffmpeg
 ```
 
-# http://www.bugcodemaster.com/article/convert-videos-mp4-format-using-ffmpeg
-- Convert & scale mov to mp4
+## Convert mov
+- Convert & scale mov to mp4 [convert-videos-mp4-format-using-ffmpeg](http://www.bugcodemaster.com/article/convert-videos-mp4-format-using-ffmpeg)
 ```
 ffmpeg -i file.mov -vf scale=1280:720 -c:v libx264 -preset fast -c:a aac file.mp4 -hide_banner
 ```
