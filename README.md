@@ -226,4 +226,7 @@ ffmpeg file.mp3 -i file.m4a -codex:a libmp3lame -qscale:a 1
 ```
 ffmpeg -i input.mp4 -c:v libx264 -crf 24 -b:v 1M -c:a aac output.mp4
 ```
-- Convert mov to mp4
+- Split AVi
+```
+ffmpeg -i video.avi -vcodec copy -acodec copy -ss 00:40:35 -t 0:3:00 out.avi
+```
