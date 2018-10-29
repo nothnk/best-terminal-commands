@@ -217,7 +217,7 @@ ffmpeg -i file.mov -vf scale=1280:720 -c:v libx264 -preset fast -c:a aac file.mp
 ```
 # ConvertVideo
 convertVideo(){
-  ffmpeg -i $1.mov -vf -c:v libx264 -preset fast -c:a aac $1.mp4 -hide_banner
+  ffmpeg -i $1.mov -c:v libx264 -preset fast -c:a aac $1.mp4 -hide_banner
 }
 ```
 
