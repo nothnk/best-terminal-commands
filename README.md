@@ -202,13 +202,23 @@ npm ls -g | grep -E "babelcli|crossenv"
 ## Convert files *(2)*
 - Requirements: Install ffmpeg
 ```
-brew install ffmpeg
+1. xcode-select --install ([If you don`t have install xcode developer tools](https://apple.stackexchange.com/questions/254380/macos-mojave-invalid-active-developer-path)
+2. brew install ffmpeg
 ```
 
 ## Convert mov
 - Convert & scale mov to mp4 [convert-videos-mp4-format-using-ffmpeg](http://www.bugcodemaster.com/article/convert-videos-mp4-format-using-ffmpeg)
 ```
 ffmpeg -i file.mov -vf scale=1280:720 -c:v libx264 -preset fast -c:a aac file.mp4 -hide_banner
+```
+
+## Sample function for ZSH
+
+```
+# ConvertVideo
+convertVideo(){
+  ffmpeg -i $1.mov -vf -c:v libx264 -preset fast -c:a aac $1.mp4 -hide_banner
+}
 ```
 
 - Only Convert mov to mp4
