@@ -240,3 +240,10 @@ ffmpeg -i input.mp4 -c:v libx264 -crf 24 -b:v 1M -c:a aac output.mp4
 ```
 ffmpeg -i video.avi -vcodec copy -acodec copy -ss 00:40:35 -t 0:3:00 out.avi
 ```
+
+### Download files 
+```
+brew install wget
+wget [--user=NAME --password='PASSWORD'] url/ftp/web
+```
+
